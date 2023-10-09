@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Raleway:wght@500&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Stephany TE AMO</title>
+</head>
+<body>
+    <div class="top">
+        <p>Stephany Te Amo</p>
+    </div>
+    <div class="conteudo-center">
+        <div class="caixa-texto texto-1">
+            <p class="txt-1">Oi amorrrrr, desculpa por ter deixado vc tristinha não era essa minha intenção eu te amo muito, porfavor fiz com todo o carinho para vc vida, aceite esse meu pedido de desculpas :(</p>
+            <div class="click desculpa">Clique aqui para desculpar o Kauan !!</div>
+            <div class="click no-click">Clique aqui para mandar ele se fuder!!</div>
+        </div>
+        <div class="caixa-texto texto-2">
+            <div class="img"></div>
+            <p class="txt-1">Antes disso vida, só quero te lembrar o quanto eu gosto de vc, como vc é uma pessoa especial pra mim e vc é um ser humano incrível e linda de todos os jeitos e eu te amo muito mesmo e sempre vou amar e vc vai ser para sempre minha gatinha</p>
+            <div class="click amor">Agora sim clique aqui para desculpar o seu amorzinho !!</div>
+        </div>
+        <div class="caixa-texto texto-3">
+            <div class="img-2"></div>
+            <p class="txt-1">PARABÉNS VC GANHOU UM PRÊMIO ENTRE EM CONTATO COM O SEU AMOR PARA RESGATAR!! TEEEEEE AMOOOOOOOOO !!</p>
+        </div>
+    </div>
+    <script>
+        $(window).ready(function(){
+            $('.no-click').click(function(){
+                alert('Me desculpa pfvr :(');
+                alert('Sem opções vidaaaaa!! te amo!');
+                $('.no-click').hide();
+            })
+            $('.desculpa').click(function(){
+                $('.texto-2').css('display','flex');
+                $('.texto-1').hide();
+            })
+            $('.amor').click(function(){
+                $('.texto-3').css('display','flex');
+                $('.texto-2').hide();
+            })
+        })
+    </script>
+</body>
+</html>
